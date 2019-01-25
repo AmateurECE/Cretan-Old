@@ -8,13 +8,17 @@
 #
 # CREATED:	    01/23/2019
 #
-# LAST EDITED:	    01/23/2019
+# LAST EDITED:	    01/25/2019
 ###
 
-.PHONY: virtualenv
+# Force pipenv to put the package cache here
+export PIPENV_CACHE_DIR=$(PWD)
+# Force pipenv to put the venv in the project directory
+export PIPENV_VENV_IN_PROJECT=1
 
-virtualenv:
-	virtualenv -p `which python3 || which python` .
-	source bin/activate && pip install -r ./requirements.txt
+.PHONY: pipenv
+
+pipenv:
+	pipenv install
 
 ##############################################################################
