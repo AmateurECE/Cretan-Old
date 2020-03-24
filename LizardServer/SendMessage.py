@@ -27,7 +27,7 @@ def parseArguments():
 
 def main():
     args = parseArguments()
-    with Client('localhost', 13001) as client:
+    with Client('192.168.1.60', 13001) as client:
         message = ('SEND_MESSAGE\n'
                    + args.device + '\n'
                    + args.message + '\n')
