@@ -3,12 +3,12 @@
 #
 # AUTHOR:           Ethan D. Twardy <edtwardy@mtu.edu>
 #
-# DESCRIPTION:      Connects to the LizardServer and sends a message to a
+# DESCRIPTION:      Connects to the CretanServer and sends a message to a
 #                   device.
 #
 # CREATED:          03/24/2020
 #
-# LAST EDITED:      03/24/2020
+# LAST EDITED:      03/25/2020
 ###
 
 import argparse

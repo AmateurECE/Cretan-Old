@@ -9,7 +9,7 @@
 #
 # CREATED:          01/25/2019
 #
-# LAST EDITED:      02/09/2019
+# LAST EDITED:      03/25/2020
 ###
 
 ###############################################################################
@@ -51,7 +51,7 @@ class Messenger():
             registrationToken = tokenFile.readline()[:-1]
             message = messaging.Message(
                 data={
-                    "title": "Lizard-Server",
+                    "title": "Cretan-Server",
                     "body": "Ethan D. Twardy"
                 },
                 token=registrationToken,

@@ -1,14 +1,14 @@
 #!/usr/bin/env python3
 ###############################################################################
-# NAME:             LizardServer.py
+# NAME:             CretanServer.py
 #
 # AUTHOR:           Ethan D. Twardy <edtwardy@mtu.edu>
 #
-# DESCRIPTION:      Contains the main method for the Lizard Server application
+# DESCRIPTION:      Contains the main method for the Cretan Server application
 #
 # CREATED:          01/24/2019
 #
-# LAST EDITED:      03/24/2020
+# LAST EDITED:      03/25/2020
 ###
 
 import sys
@@ -17,7 +17,7 @@ import sys
 import firebase_admin
 from firebase_admin import credentials
 
-# LizardServer
+# CretanServer
 from NetworkUtils import Server
 import DownstreamMessaging
 # See `ServiceAccountKey.py-Format.md'
@@ -30,10 +30,10 @@ from ServiceAccountKey import ServiceAccountKey
 deviceTokens = {}
 
 ###############################################################################
-# LizardSession
+# CretanSession
 ###
 
-class LizardSession:
+class CretanSession:
     """Handles incoming connections as sessions."""
 
     def __init__(self, clientSock, address, logfn=print):
@@ -55,16 +55,16 @@ class LizardSession:
             self.clientSock.send(bytes(b"OK"))
             # token = deviceTokens[arguments[1]]
             # messenger = DownstreamMessaging.Messenger(token)
-            # code = messenger.sendMessage('Lizard', arguments[2])
+            # code = messenger.sendMessage('Cretan', arguments[2])
             # self.logfn('Return code: {}'.format(code))
         else:
             self.logfn('Received invalid command "{}"'.format(arguments[0]))
 
 ###############################################################################
-# LizardSessionFactory
+# CretanSessionFactory
 ###
 
-class LizardSessionFactory:
+class CretanSessionFactory:
     """Factory for session instances."""
 
     def __init__(self):
@@ -72,7 +72,7 @@ class LizardSessionFactory:
 
     def make(self, clientSock, address, logfn=print):
         """Create a Session instance"""
-        return LizardSession(clientSock, address, logfn)
+        return CretanSession(clientSock, address, logfn)
 
 ###############################################################################
 # MAIN
@@ -97,9 +97,9 @@ def main():
     firebase_admin.initialize_app(cred)
 
     defaultPort = 13001
-    factory = LizardSessionFactory()
+    factory = CretanSessionFactory()
     theLogger = Logger(sys.stderr)
-    theLogger.log('Welcome to Lizard!')
+    theLogger.log('Welcome to Cretan!')
     with Server(defaultPort, factory, logfn=theLogger.log) as server:
         server.run()
 
