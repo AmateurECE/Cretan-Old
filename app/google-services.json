@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "28863855709",
+    "firebase_url": "https://lizard-59f8e.firebaseio.com",
+    "project_id": "lizard-59f8e",
+    "storage_bucket": "lizard-59f8e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:28863855709:android:e3ef32c6bf52b024",
+        "android_client_info": {
+          "package_name": "com.edtwardy.lizard"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "28863855709-ht2qp7hn0j7doneamuuagajmcjolprs6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC4kyBjGHYEnjMXBMtsr7OPMgIpr-Ab0Kk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
