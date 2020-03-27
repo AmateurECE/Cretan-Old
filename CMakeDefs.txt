@@ -1,0 +1,17 @@
+###############################################################################
+# NAME:             CMakeDefs.txt
+#
+# AUTHOR:           Ethan D. Twardy <edtwardy@mtu.edu>
+#
+# DESCRIPTION:      Contains sources for the CMake build system.
+#
+# CREATED:          09/13/2019
+#
+# LAST EDITED:      03/27/2020
+###
+
+set(CRETAN_SOURCES
+    source/main.cpp    
+)
+
+###############################################################################
