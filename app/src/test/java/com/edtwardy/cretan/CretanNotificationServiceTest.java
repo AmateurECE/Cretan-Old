@@ -1,10 +1,10 @@
-package com.edtwardy.lizard;
+package com.edtwardy.cretan;
 
 import org.junit.Test;
 
 import static org.junit.Assert.*;
 
-public class LizardNotificationServiceTest {
+public class CretanNotificationServiceTest {
 
     @Test
     public void onMessageReceived() {

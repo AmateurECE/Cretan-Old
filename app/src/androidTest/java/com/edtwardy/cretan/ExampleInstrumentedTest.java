@@ -1,4 +1,4 @@
-package com.edtwardy.lizard;
+package com.edtwardy.cretan;
 
 import android.content.Context;
 import androidx.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.edtwardy.lizard", appContext.getPackageName());
+        assertEquals("com.edtwardy.cretan", appContext.getPackageName());
     }
 }

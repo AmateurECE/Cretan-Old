@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.edtwardy.lizard">
+    package="com.edtwardy.cretan">
 
     <application
         android:icon="@mipmap/ic_launcher"
@@ -9,7 +9,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <service
-            android:name=".LizardNotificationService"
+            android:name=".CretanNotificationService"
             android:enabled="true"
             android:exported="true">
             <intent-filter>

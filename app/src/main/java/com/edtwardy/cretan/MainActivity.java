@@ -1,4 +1,4 @@
-package com.edtwardy.lizard;
+package com.edtwardy.cretan;
 
 import android.os.Bundle;
 import android.util.Log;
@@ -18,7 +18,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
 
-    private static final String TAG = "Lizard";
+    private static final String TAG = "cretan";
 
     private TextView mTextMessage;
     private String mToken;

@@ -1,4 +1,4 @@
-package com.edtwardy.lizard;
+package com.edtwardy.cretan;
 
 import org.junit.Test;
 

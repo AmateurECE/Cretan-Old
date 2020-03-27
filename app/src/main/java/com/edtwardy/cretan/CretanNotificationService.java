@@ -1,4 +1,4 @@
-package com.edtwardy.lizard;
+package com.edtwardy.cretan;
 
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
@@ -15,11 +15,11 @@ import android.util.Log;
 import com.google.firebase.messaging.FirebaseMessagingService;
 import com.google.firebase.messaging.RemoteMessage;
 
-public class LizardNotificationService extends FirebaseMessagingService {
-    public LizardNotificationService() {
+public class CretanNotificationService extends FirebaseMessagingService {
+    public CretanNotificationService() {
     }
 
-    private static final String TAG = "LizardNotification";
+    private static final String TAG = "CretanNotification";
 
     @Override
     public void onMessageReceived(@NonNull RemoteMessage remoteMessage) {
