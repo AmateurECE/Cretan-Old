@@ -13,12 +13,13 @@
 #ifndef __ET_ISERVER__
 #define __ET_ISERVER__
 
-#include <namespaces/Interfaces.h>
+#include <namespaces/Networking.h>
 
-class Cretan::Interfaces::iServer
+class Networking::IServer
 {
 public:
-  virtual void runLoop() = 0;
+  virtual void start() = 0;
+  virtual void startAsync() = 0;
 };
 
 #endif // __ET_ISERVER__

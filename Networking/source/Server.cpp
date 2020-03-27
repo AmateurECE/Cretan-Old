@@ -1,26 +1,21 @@
 ///////////////////////////////////////////////////////////////////////////////
-// NAME:            Networking.h
+// NAME:            Server.cpp
 //
 // AUTHOR:          Ethan D. Twardy <edtwardy@mtu.edu>
 //
-// DESCRIPTION:     The Networking namespace
+// DESCRIPTION:     Implementation of the Server.
 //
 // CREATED:         03/27/2020
 //
 // LAST EDITED:     03/27/2020
 ////
 
-#ifndef __ET_NETWORKING__
-#define __ET_NETWORKING__
+#include <Networking/Server.h>
 
-namespace Cretan
-{
-  namespace Networking
-  {
-    class TCPServer;
-  };
-};
+void Networking::Server::start()
+{}
 
-#endif // __ET_NETWORKING__
+void Networking::Server::startAsync()
+{}
 
 ///////////////////////////////////////////////////////////////////////////////
